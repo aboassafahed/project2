@@ -1,0 +1,118 @@
+
+/* =============
+ table of contents
+===============
+ 
+1. Top Section
+2. left-section ==>Button
+3. Right-section ==>Cards
+ 
+*/
+
+
+
+/*Top Section*/
+.title-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-section1{
+  text-align: center;
+  display: flex;
+  margin: 0.75rem;
+  padding: 0.75rem;
+}
+main.flex{
+  gap: 1.05rem;
+  align-items: start;
+}
+/*left-section ==>Button*/
+main section.left-section.flex{
+flex-direction: column;
+gap: 15px;
+
+}
+main section.left-section.flex button{
+  background-color: rgba(165, 42, 42, 0.459);
+  width: 10rem;
+  padding: 0.75rem 0;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.05rem;
+  opacity: 0.9;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+main section.left-section.flex button:hover{
+  opacity: 1;
+}
+main section.left-section.flex button.active{
+  opacity: 1;
+  font-weight: bold;
+  padding: 0.8rem 0;
+  border: 1px solid crimson;
+}
+
+/*Right-section ==>Cards*/
+
+.card{
+  background-image: linear-gradient(rgb(243, 184, 196),rgb(245, 226, 226));
+  border: 1px solid rgb(241, 209, 216);
+  transition: 0.3s;
+}
+.card:hover{
+  border: 1px solid crimson;
+  scale: 1.01;
+  cursor: pointer;
+
+}
+main section.right-section.flex{
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 3rem;
+  /*flex-grow: 1;*/
+
+}
+.card .box{
+  padding: 1rem 0.1rem;
+}
+.card .box .icon{
+  justify-content: space-between;
+
+}
+.card a.link{
+  font-size: 1rem;
+  color: rgb(77, 77, 138);
+  margin-right: 5px;
+}
+.card .box .sub-title{
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+@media (max-width: 600px) {
+  main.flex{
+    flex-direction: column;
+    gap: 1.05rem;
+    align-items: center;
+  }
+  main section.left-section.flex{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    
+    }
+    main section.left-section.flex button{
+    
+      width: 5rem;
+      padding: 0.3rem 0;
+      font-size: 0.5rem;
+    }
+}

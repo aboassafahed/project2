@@ -1,0 +1,47 @@
+.hero{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+   background: url('./public/image/home-office-gbe2194912-1920.jpg')  top right/cover ;
+   display: flex;
+   opacity: 0.8;
+   flex-basis: auto;
+   background-position: center, bottom left;
+   height: fit-content;
+   padding: 15rem 2rem 3rem;
+}
+
+.text-wrapper{
+  width: 75%;
+}
+.mbr-section-title {
+  margin:0.75rem;
+  color: rgb(190, 87, 108);
+  font-size: 3rem;
+}
+.mbr-text{
+  width: 50%;
+  padding: 1rem;
+  color:rgb(252, 209, 209);
+  font-size: 2rem;
+}
+
+
+@media (max-width: 992px) {
+  .hero{
+
+    width:98%;
+    align-items: center;
+  }
+  .mbr-section-title {
+    font-size: 2rem;
+  }
+  .mbr-text{
+    font-size: 1.2rem;
+  }
+
+
+
+}
+
+
+

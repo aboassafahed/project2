@@ -1,0 +1,30 @@
+
+.card-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section.section-3.flex{
+  justify-content: center;
+  /*flex-wrap: wrap;*/
+  column-gap: 16px;
+  row-gap: 3rem;
+  /*flex-grow: 1;*/
+
+}
+.card-1 .box{
+  padding: 2rem 0.8rem;
+}
+.card-1 .box .sub-title{
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .card-1{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+    }

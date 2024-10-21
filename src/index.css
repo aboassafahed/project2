@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+:root{
+  
+}
+
+body{
+
+}
+html {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+} 
+ 
+*, *:before, *:after {box-sizing: inherit;}  
+.Container{
+/* border:1px solid black;*/
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box-main{
+  display: flex;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.devider{
+/*  border-bottom: 1px solid black;*/
+  margin: 2rem 0;
+}
+
+/*Nav*/
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: initial;
+  transition: 0.2s;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+button{all:unset;}
+
+button:hover{
+  cursor: pointer;
+}
+ 
+::-webkit-scrollbar {
+  width: 1.1rem;
+ }
+ 
+::-webkit-scrollbar-track {
+  border: 7px solid #e3e7f5;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  }
+ 
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #9e4673, #d2d7dd);
+  border-radius: 1rem;
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(270deg, #9e4673, #ced6df, #9e4673);
+}
+ 
+/* for Firefox */
+ html {scrollbar-color: #9e4673 #ebf3fd;} 
+
+
+ .scroll2Up{
+  background-color: #9e4673;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+ }
+ .scroll2Up:hover{
+  background-color: #ee9bc6;
+ }
+
+ @media (max-width: 600px){
+  .Container{
+    width: 98%;
+    padding: 0;
+  }
+  .scroll2Up{
+    width: 1.8rem;
+    height: 1.8rem;
+    opacity: 0.2;
+    font-size: 0.8rem;
+  }
+ }
